@@ -1,0 +1,45 @@
+version : '3.6'
+
+services:
+  mysql-server:
+    image: mysql/mysql-server:latest
+    container_name: mysql-server
+    ports: 
+      - "3306:3306"
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydb
+      MYSQL_ROOT_HOST: 192.168.99.100
+    restart: always
+ 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: myphpadmin
+    depends_on:
+      - mysql-server
+    environment:
+      PMA_HOST: mysql-server
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: password
+    restart: always
+    ports:
+      - 8080:80
+  
+  docker-compose-app:
+    image: docker-compose
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+     - 8084:8084
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-server:3306/mydb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+      FLYWAY_URL: jdbc:mysql://mysql-server:3306/mydb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+    
+    depends_on:
+      - mysql-server
+   
+   
+ 
