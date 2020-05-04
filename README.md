@@ -20,12 +20,12 @@ Docker compose deployment tool with example
        </li> 
        <br/>
        <li>
-       <b> Docker </b> images contain executable application source code as well as all the tools, libraries, and dependencies. 
+       <b> Docker images </b>  contain executable application source code as well as all the tools, libraries, and dependencies. 
          When you run the Docker image, it becomes one instance of the container
        </li>
        <br/>
       <li>
-        <b> Docker </b> container is running instance of docker image. Every container running is isolation from one another
+        <b> Docker container </b> is running instance of docker image. Every container running is isolation from one another
       </li> 
        <br/>
       <li>
