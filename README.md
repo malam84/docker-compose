@@ -1,8 +1,8 @@
 # docker-compose
-Docker compose deployment with example
+Docker compose deployment tool with example
 
 
-<table cellspacing="0" cellpadding="0">
+<table style="border-collapse: collapse; border: none;">
   <tr>
    <td>
      <ul>
@@ -38,3 +38,17 @@ Docker compose deployment with example
    </td>
   </tr>
 </table>
+<br/>
+<strong> Deployment of Services on Docker </strong>
+<br/>
+Running only a few containers is fairly simple to manage application within Docker Engine itself. But if deployment comprises many containers and services then it difficult to managed for developer without the help of these tdocker compose and kubernetes tools
+<br/>
+<strong> Docker Compose </strong>
+Docker compose is a tool for defining and running multi-container Docker applications that all reside on the same host. Docker Compose creates a YAML file that specifies which services are included in the application, and can deploy and run containers with a single command
+<br/>
+<strong> Prerequisites </strong>
+<ul>
+  <li>Make sure you have already installed both <a href="https://docs.docker.com/get-docker/"> Docker Engine </a> and 
+    <a href="https://docs.docker.com/compose/install/" />Docker Compose </a> </li>
+  <li> Verify installation using </br> $ docker-compose --version </li>
+</ul>
