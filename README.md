@@ -1,6 +1,8 @@
 # docker-compose
 Docker compose deployment tool with example
-
+<table>
+  <tr>
+   <td>
      <ul>
        <li>
          <b> Microservices </b>  is popular for building large-scale applications and breaking down one large application into a
@@ -31,7 +33,9 @@ Docker compose deployment tool with example
         create their own private repository to store docker images
       </li> 
      </ul>
-  
+       </td>
+     </tr>
+  </table>
 <br/>
 <strong> Deployment of Services on Docker </strong>
 <br/><br/>
