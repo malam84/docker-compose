@@ -1,10 +1,6 @@
 # docker-compose
 Docker compose deployment tool with example
 
-
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-   <td>
      <ul>
        <li>
          <b> Microservices </b>  is popular for building large-scale applications and breaking down one large application into a
@@ -35,18 +31,16 @@ Docker compose deployment tool with example
         create their own private repository to store docker images
       </li> 
      </ul>
-   </td>
-  </tr>
-</table>
+  
 <br/>
 <strong> Deployment of Services on Docker </strong>
-<br/>
+<br/><br/>
 Running only a few containers is fairly simple to manage application within Docker Engine itself. But if deployment comprises many containers and services then it difficult to managed for developer without the help of these tdocker compose and kubernetes tools
-<br/>
-<strong> Docker Compose </strong>
+<br/><br/>
+<strong> Docker Compose </strong> <br/><br/>
 Docker compose is a tool for defining and running multi-container Docker applications that all reside on the same host. Docker Compose creates a YAML file that specifies which services are included in the application, and can deploy and run containers with a single command
-<br/>
-<strong> Prerequisites </strong>
+<br/><br/>
+<strong> Prerequisites </strong><br/><br/>
 <ul>
   <li>Make sure you have already installed both <a href="https://docs.docker.com/get-docker/"> Docker Engine </a> and 
     <a href="https://docs.docker.com/compose/install/" />Docker Compose </a> </li>
